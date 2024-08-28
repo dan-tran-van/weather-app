@@ -42,7 +42,7 @@ export async function renderData() {
 
   Content.textContent = '';
 
-  renderCurrentData(weatherData.currentConditions);
+  renderCurrentData(weatherData);
   renderDailyForecast(weatherData.days);
   renderHourlyForecast(weatherData.days[0].hours);
 }
