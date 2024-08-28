@@ -110,9 +110,7 @@ async function fetchWeatherData(
   const unitGroup = unit == "celsius" ? "metric" : "us";
 
   const weatherDataPromise = await fetch(
-    `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?unitGroup=${unitGroup}&key=${
-      import.meta.env.VITE_API_KEY
-    }&contentType=json`,
+    `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?unitGroup=${unitGroup}&key=M9XM3YWJLBLXJN6SME87STXZ5&contentType=json`,
     {
       mode: "cors",
     }
